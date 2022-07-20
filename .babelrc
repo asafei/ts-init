@@ -1,0 +1,4 @@
+{
+    // 执行顺序从后到前
+    "presets": ["@babel/preset-react","@babel/preset-typescript"]
+}
