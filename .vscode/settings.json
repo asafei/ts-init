@@ -1,0 +1,10 @@
+{
+    "eslint.enable": true,
+    "cSpell.words": [
+        // 设置关键字
+    ],
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+}
