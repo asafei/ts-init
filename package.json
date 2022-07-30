@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --config ./scripts/config/webpack.dev.js",
     "build": "cross-env NODE_ENV=production webpack --config ./scripts/config/webpack.prod.js",
-    "lint": "eslint src --fix --ext .ts,.tsx ",
+    "husky:prepare": "npx husky install",
+    "husky:styleFix": "lint-staged",
+    "lint:fix": "npx eslint src --fix --ext .js,.jsx,.ts,.tsx ",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -33,6 +35,8 @@
     "eslint-plugin-react": "^7.30.1",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.5.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
     "prettier": "^2.7.1",
     "style-loader": "^3.3.1",
     "typescript": "^4.7.4",
@@ -41,5 +45,10 @@
     "webpack-cli": "^4.10.0",
     "webpack-dev-server": "^4.9.3",
     "webpack-merge": "^5.8.0"
+  },
+  "lint-staged": {
+    "*.{ts,tsx,js,jsx}": [
+      "npx yarn lint:fix"
+    ]
   }
 }

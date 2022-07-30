@@ -12,6 +12,6 @@ export class BaseUtils {
     }
 
     public test3() {
-        console.log('test')
+        console.log('test3')
     }
 }
