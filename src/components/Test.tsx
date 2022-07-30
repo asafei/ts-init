@@ -3,7 +3,6 @@
 import React from 'react'
 import imageTest from '../assets/test.png'
 
-// eslint-disable-next-line react/display-name
 export const Test = React.memo(() => {
     return (
         <div>
@@ -12,3 +11,5 @@ export const Test = React.memo(() => {
         </div>
     )
 })
+
+Test.displayName = 'Test'
