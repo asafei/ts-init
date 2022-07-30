@@ -1,7 +1,7 @@
 /** @format */
 
 export class BaseUtils {
-    constructor(private a: number) { }
+    constructor(private a: number) {}
     public static test(): void {
         console.log('test')
         console.log('adsfasd')
@@ -12,6 +12,6 @@ export class BaseUtils {
     }
 
     public test3() {
-        console.log('test')
+        console.log('test3')
     }
 }
